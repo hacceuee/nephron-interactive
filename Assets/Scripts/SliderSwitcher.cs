@@ -30,6 +30,7 @@ public class SliderSwitcher : MonoBehaviour
 
         _slider.fillRect.rotation = new Quaternion(0, 0, 0, 0);
         _slider.fillRect.pivot = new Vector2(_slider.fillRect.transform.parent.localPosition.x, _slider.fillRect.pivot.y);
+        _slider.fillRect.pivot = new Vector2(1f, 0.5f);
         if (_slider.value > 0)
         {
             _slider.fillRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, _sliderSize * _slider.value);
