@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+  m_Name: OpenSans Variable - Condensed
+  m_EditorClassIdentifier: 
+  hashCode: 1992824719
+  material: {fileID: 366262787495705662, guid: b3b549db1c34e3c4a9582f6e3766a69f, type: 2}
+  materialHashCode: 1508057807
+  m_Version: 1.1.0
+  m_SourceFontFileGUID: ef4dd08f7346ed04ba37ed11fd295600
+  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: ef4dd08f7346ed04ba37ed11fd295600, type: 3}
+  m_SourceFontFile: {fileID: 0}
+  m_AtlasPopulationMode: 0
+  m_FaceInfo:
+    m_FaceIndex: 0
+    m_FamilyName: Open Sans
+    m_StyleName: Regular
+    m_PointSize: 90
+    m_Scale: 1
+    m_UnitsPerEM: 2048
+    m_LineHeight: 122.56348
+    m_AscentLine: 96.19629
+    m_CapLine: 64
+    m_MeanLine: 48
+    m_Baseline: 0
+    m_DescentLine: -26.367188
+    m_SuperscriptOffset: 96.19629
+    m_SuperscriptSize: 0.5
+    m_SubscriptOffset: -26.367188
+    m_SubscriptSize: 0.5
+    m_UnderlineOffset: -5.493164
+    m_UnderlineThickness: 2.1972656
+    m_StrikethroughOffset: 19.2
+    m_StrikethroughThickness: 2.1972656
+    m_TabWidth: 23
+  m_GlyphTable: []
+  m_CharacterTable: []
+  m_AtlasTextures:
+  - {fileID: -5933955514436653504, guid: b3b549db1c34e3c4a9582f6e3766a69f, type: 2}
+  m_AtlasTextureIndex: 0
+  m_IsMultiAtlasTexturesEnabled: 0
+  m_ClearDynamicDataOnBuild: 0
+  m_UsedGlyphRects: []
+  m_FreeGlyphRects:
+  - m_X: 0
+    m_Y: 0
+    m_Width: 1023
+    m_Height: 1023
+  m_fontInfo:
+    Name: 
+    PointSize: 0
+    Scale: 0
+    CharacterCount: 0
+    LineHeight: 0
+    Baseline: 0
+    Ascender: 0
+    CapHeight: 0
+    Descender: 0
+    CenterLine: 0
+    SuperscriptOffset: 0
+    SubscriptOffset: 0
+    SubSize: 0
+    Underline: 0
+    UnderlineThickness: 0
+    strikethrough: 0
+    strikethroughThickness: 0
+    TabWidth: 0
+    Padding: 0
+    AtlasWidth: 0
+    AtlasHeight: 0
+  atlas: {fileID: 0}
+  m_AtlasWidth: 1024
+  m_AtlasHeight: 1024
+  m_AtlasPadding: 9
+  m_AtlasRenderMode: 4165
+  m_glyphInfoList: []
+  m_KerningTable:
+    kerningPairs: []
+  m_FontFeatureTable:
+    m_GlyphPairAdjustmentRecords: []
+  fallbackFontAssets: []
+  m_FallbackFontAssetTable: []
+  m_CreationSettings:
+    sourceFontFileName: 
+    sourceFontFileGUID: 742e988baf043c743ba63d19cac7a1bd
+    pointSizeSamplingMode: 0
+    pointSize: 90
+    padding: 9
+    packingMode: 0
+    atlasWidth: 1024
+    atlasHeight: 1024
+    characterSetSelectionMode: 7
+    characterSequence: 
+    referencedFontAssetGUID: 
+    referencedTextAssetGUID: 
+    fontStyle: 0
+    fontStyleModifier: 0
+    renderMode: 4165
+    includeFontFeatures: 0
+  m_FontWeightTable:
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 11400000, guid: 326225d1544d04c458dcbe0a4eeefd25, type: 2}
+    italicTypeface: {fileID: 11400000, guid: 5e8f93379606fba4d9ffad1d5fcb066a, type: 2}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 11400000, guid: 1f89f7b6617562943b214b90ee23701d, type: 2}
+  - regularTypeface: {fileID: 11400000, guid: de22d463d8c8b4b43b14f957e5a12376, type: 2}
+    italicTypeface: {fileID: 11400000, guid: 690f13ce74987374ea4e63666837a3c8, type: 2}
+  - regularTypeface: {fileID: 11400000, guid: 33696606dba3be5429c4c52c92fa88c3, type: 2}
+    italicTypeface: {fileID: 11400000, guid: abc337b036e18e144b50b698e7947642, type: 2}
+  - regularTypeface: {fileID: 11400000, guid: 5993879346f8b4541942e068521db6f1, type: 2}
+    italicTypeface: {fileID: 11400000, guid: d45a6e9d9db99d44cb3d900e777f1066, type: 2}
+  - regularTypeface: {fileID: 11400000, guid: a782f565b0954ae458915a7aeb0c5f80, type: 2}
+    italicTypeface: {fileID: 11400000, guid: d45a6e9d9db99d44cb3d900e777f1066, type: 2}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  fontWeights: []
+  normalStyle: 0
+  normalSpacingOffset: 0
+  boldStyle: 0.75
+  boldSpacing: 7
+  italicStyle: 35
+  tabSize: 10
