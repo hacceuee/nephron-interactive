@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class ScaleController : MonoBehaviour
+public class FillAreaController : MonoBehaviour
 {
     [Header("Fill Control")]
     [Range(-5, 5)] public float sliderValue = 0;
@@ -15,68 +15,54 @@ public class ScaleController : MonoBehaviour
 
     private float lastSliderValue;
     private float fullWidth;
+    private float centerPosition => fullWidth * 0.5f;
+
     private readonly Quaternion negativeRotation = Quaternion.identity;
     private readonly Quaternion positiveRotation = Quaternion.Euler(0, 180, 0);
 
-    private void Start()
-    {
-        InitializeAtZero();
-    }
-
     private void OnEnable()
     {
-        InitializeAtZero();
-    }
-
-    private void InitializeAtZero()
-    {
-        sliderValue = 0;
         fullWidth = GetComponent<RectTransform>().rect.width;
-        UpdateFillArea(forceUpdate: true);
+        lastSliderValue = sliderValue - 1; // Force update on first pass
+        UpdateFillArea();
     }
 
     private void OnValidate()
     {
         if (fillArea == null) return;
 
-        if (fullWidth == 0)
+        if (fullWidth <= 0)
             fullWidth = GetComponent<RectTransform>().rect.width;
 
-        if (sliderValue != lastSliderValue || !Application.isPlaying)
-        {
-            UpdateFillArea();
-            lastSliderValue = sliderValue;
-        }
+        UpdateFillArea();
     }
 
-    private void UpdateFillArea(bool forceUpdate = false)
+    private void UpdateFillArea()
     {
-        if (!forceUpdate && sliderValue == lastSliderValue && Application.isPlaying)
+        if (sliderValue == lastSliderValue && Application.isPlaying)
             return;
 
-        float centerPosition = fullWidth * 0.5f;
+        lastSliderValue = sliderValue;
 
+        // Always set Y values the same
+        float offsetMinY = fillArea.offsetMin.y;
+        float offsetMaxY = fillArea.offsetMax.y;
+
+        // Calculate fill and set rotation
         if (sliderValue > 0)
         {
             // Positive values - fill right + flip
             float fillAmount = (sliderValue / maxValue) * centerPosition;
-            fillArea.offsetMin = new Vector2(centerPosition, fillArea.offsetMin.y);
-            fillArea.offsetMax = new Vector2(-(fullWidth - (centerPosition + fillAmount)), fillArea.offsetMax.y);
+            fillArea.offsetMin = new Vector2(centerPosition, offsetMinY);
+            fillArea.offsetMax = new Vector2(-(fullWidth - (centerPosition + fillAmount)), offsetMaxY);
             fillArea.localRotation = positiveRotation;
-        }
-        else if (sliderValue < 0)
-        {
-            // Negative values - fill left
-            float fillAmount = (sliderValue / minValue) * centerPosition;
-            fillArea.offsetMin = new Vector2(centerPosition - fillAmount, fillArea.offsetMin.y);
-            fillArea.offsetMax = new Vector2(-(fullWidth - centerPosition), fillArea.offsetMax.y);
-            fillArea.localRotation = negativeRotation;
         }
         else
         {
-            // Zero - centered with no fill
-            fillArea.offsetMin = new Vector2(centerPosition, fillArea.offsetMin.y);
-            fillArea.offsetMax = new Vector2(-(fullWidth - centerPosition), fillArea.offsetMax.y);
+            // Zero or negative values
+            float fillAmount = sliderValue < 0 ? (sliderValue / minValue) * centerPosition : 0;
+            fillArea.offsetMin = new Vector2(centerPosition - fillAmount, offsetMinY);
+            fillArea.offsetMax = new Vector2(-(fullWidth - centerPosition), offsetMaxY);
             fillArea.localRotation = negativeRotation;
         }
     }
