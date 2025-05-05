@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Palette", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
+[CreateAssetMenu(fileName = "Palette", menuName = "ScriptableObjects/ColorPalette", order = 1)]
 public class ColorPalette : ScriptableObject
 {
     //public Dictionary<string, Color> ColorReference;

@@ -1,0 +1,26 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class MedicationController : MonoBehaviour
+{
+    public GameObject urineSlider;
+    public GameObject sodiumSlider;
+    public GameObject potassiumSlider;
+    public GameObject calciumSlider;
+    public GameObject bicarbSlider;
+
+    private Medication currentMedication;
+
+    public void ApplyMedication(Medication med)
+    {
+        currentMedication = med;
+
+        urineSlider.GetComponent<ScaleController>()?.SetSliderValue(med.urine);
+        sodiumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.sodiumLevel);
+        potassiumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.potassiumLevel);
+        calciumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.calciumLevel);
+        bicarbSlider.GetComponent<ScaleController>()?.SetSliderValue(med.bicarbLevel);
+
+        // TODO: Add the cell interaction feature when ready
+    }
+}

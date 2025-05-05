@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class FillAreaController : MonoBehaviour
+public class ScaleController : MonoBehaviour
 {
     [Header("Fill Control")]
     [Range(-5, 5)] public float sliderValue = 0;
@@ -65,5 +65,11 @@ public class FillAreaController : MonoBehaviour
             fillArea.offsetMax = new Vector2(-(fullWidth - centerPosition), offsetMaxY);
             fillArea.localRotation = negativeRotation;
         }
+    }
+
+    public void SetSliderValue(float value)
+    {
+        sliderValue = Mathf.Clamp(value, minValue, maxValue);
+        UpdateFillArea();
     }
 }
