@@ -9,11 +9,11 @@ public class Medication : ScriptableObject
     public string medicationName;
 
     [Header("Values")]
-    public int urine;
-    public int sodiumLevel;
-    public int potassiumLevel;
-    public int calciumLevel;
-    public int bicarbLevel;
+    public float urine;
+    public float sodiumLevel;
+    public float potassiumLevel;
+    public float calciumLevel;
+    public float bicarbLevel;
 
     [Header("Warnings")]
     public bool hasWarning;
