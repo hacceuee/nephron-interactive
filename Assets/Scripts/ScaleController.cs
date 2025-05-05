@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [ExecuteInEditMode]
 public class ScaleController : MonoBehaviour
@@ -9,6 +10,7 @@ public class ScaleController : MonoBehaviour
     [Header("Settings")]
     public float minValue = -5f;
     public float maxValue = 5f;
+    public float lerpDuration = 1.0f;
 
     [Header("Fill Area")]
     public RectTransform fillArea;
@@ -16,6 +18,8 @@ public class ScaleController : MonoBehaviour
     private float lastSliderValue;
     private float fullWidth;
     private float centerPosition => fullWidth * 0.5f;
+
+    private Coroutine lerpCoroutine;
 
     private readonly Quaternion negativeRotation = Quaternion.identity;
     private readonly Quaternion positiveRotation = Quaternion.Euler(0, 180, 0);
@@ -69,7 +73,29 @@ public class ScaleController : MonoBehaviour
 
     public void SetSliderValue(float value)
     {
-        sliderValue = Mathf.Clamp(value, minValue, maxValue);
+        value = Mathf.Clamp(value, minValue, maxValue);
+
+        if (lerpCoroutine != null)
+            StopCoroutine(lerpCoroutine);
+
+        lerpCoroutine = StartCoroutine(LerpToValue(value));
+    }
+
+    private IEnumerator LerpToValue(float target)
+    {
+        float start = sliderValue;
+        float elapsed = 0f;
+
+        while (elapsed < lerpDuration)
+        {
+            sliderValue = Mathf.Lerp(start, target, elapsed / lerpDuration);
+            UpdateFillArea();
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        sliderValue = target;
         UpdateFillArea();
+        lerpCoroutine = null;
     }
 }
