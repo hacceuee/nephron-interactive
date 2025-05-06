@@ -1,32 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
-[CreateAssetMenu(fileName = "Palette", menuName = "ScriptableObjects/ColorPalette", order = 1)]
+[CreateAssetMenu(fileName = "Palette", menuName = "UI/Color Palette")]
 public class ColorPalette : ScriptableObject
 {
-    //public Dictionary<string, Color> ColorReference;
-    public Color colorBackground;
-    public Color colorEmphasis;
-    public Color colorAccent;
-    public Color colorActiveDot;
-    public Color colorUnactiveDot;
-    public Color colorOutline;
-    public Color colorShadow;
+    [System.Serializable]
+    public class NamedColor
+    {
+        public string name;
+        public Color color;
+    }
 
-// Don't forgor - if you add more colors here, you'll have to add another to the enum object in the ColorSetter
+    public List<NamedColor> colors = new List<NamedColor>();
 
-    public Color GetColor (int color) {
-        switch (color) {
-            case 0: return colorBackground;
-            case 1: return colorEmphasis; 
-            case 2: return colorAccent;
-            case 3: return colorActiveDot;
-            case 4: return colorUnactiveDot;
-            case 5: return colorOutline;
-            case 6: return colorShadow;
-            default: return Color.red;
-        };
-    } 
+    public Color GetColorByName(string colorName)
+    {
+        foreach (var nc in colors)
+        {
+            if (nc.name == colorName)
+                return nc.color;
+        }
+
+        Debug.LogWarning($"Color '{colorName}' not found in palette.");
+        return Color.magenta; // fallback
+    }
+
+    public string[] GetColorNames()
+    {
+        List<string> names = new List<string>();
+        foreach (var nc in colors)
+            names.Add(nc.name);
+
+        return names.ToArray();
+    }
 }
-
