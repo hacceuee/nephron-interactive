@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
+[RequireComponent(typeof(Toggle))]
 [ExecuteInEditMode]
-public class ButtonColorSetter : MonoBehaviour
+public class ColorSet_ToggleActive : MonoBehaviour
 {
-    private Button button;
+    private Toggle toggle;
     private ColorPalette colorPalette;
 
     public enum paletteColors
@@ -27,7 +27,7 @@ public class ButtonColorSetter : MonoBehaviour
             colorPalette = Resources.Load<ColorPalette>("Palette");
         }
 
-        button = GetComponent<Button>();
+        toggle = GetComponent<Toggle>();
         SetSelectedColor();
     }
 
@@ -39,10 +39,10 @@ public class ButtonColorSetter : MonoBehaviour
 
     void SetSelectedColor()
     {
-        if (button == null || colorPalette == null) return;
+        if (toggle == null || colorPalette == null) return;
 
-        ColorBlock colors = button.colors;
+        ColorBlock colors = toggle.colors;
         colors.selectedColor = colorPalette.GetColor((int)targetColor);
-        button.colors = colors;
+        toggle.colors = colors;
     }
 }

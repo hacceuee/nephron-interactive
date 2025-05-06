@@ -10,7 +10,12 @@ public class MedicationController : MonoBehaviour
     public GameObject bicarbSlider;
 
     private Medication currentMedication;
-    public GameObject buttonDad;
+    //public GameObject buttonDad;
+
+    private void Start()
+    {
+        clearUI();
+    }
 
     public void ApplyMedication(Medication med)
     {
@@ -26,13 +31,13 @@ public class MedicationController : MonoBehaviour
     private void clearUI()
     {
         // Find all Button components in children of buttonDad
-        Button[] buttons = buttonDad.GetComponentsInChildren<Button>();
+        /*Button[] buttons = buttonDad.GetComponentsInChildren<Button>();
 
         foreach (Button btn in buttons)
         {
             btn.interactable = false;
             btn.interactable = true;
-        }
+        }*/ //not needed now that they're toggles! 
             
         urineSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
         sodiumSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
