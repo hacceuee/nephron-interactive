@@ -15,7 +15,7 @@ MonoBehaviour:
   colorBackground: {r: 1, g: 1, b: 1, a: 1}
   colorEmphasis: {r: 0.67499995, g: 0.63, b: 0.9, a: 1}
   colorAccent: {r: 0, g: 0, b: 0, a: 0}
-  colorActiveDot: {r: 0, g: 0, b: 0, a: 0}
-  colorUnactiveDot: {r: 0, g: 0, b: 0, a: 0}
+  colorActiveDot: {r: 0.4509804, g: 0.9019608, b: 0.95686275, a: 1}
+  colorUnactiveDot: {r: 0.9882353, g: 0.42352942, b: 0.5529412, a: 1}
   colorOutline: {r: 0, g: 0, b: 0, a: 1}
-  colorShadow: {r: 0, g: 0, b: 0, a: 0.5019608}
+  colorShadow: {r: 0.5294609, g: 0.49560001, b: 0.708, a: 0.5019608}
