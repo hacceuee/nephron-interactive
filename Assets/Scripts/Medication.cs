@@ -10,6 +10,7 @@ public class Medication : ScriptableObject
 
     [Header("Values")]
     public float urine;
+    public float pH;
     public float sodiumLevel;
     public float potassiumLevel;
     public float calciumLevel;

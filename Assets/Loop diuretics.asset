@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   medicationName: Loop diuretics
   urine: 1
+  pH: -1.1
   sodiumLevel: 1
   potassiumLevel: 1
   calciumLevel: 1

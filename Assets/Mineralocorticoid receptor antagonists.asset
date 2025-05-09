@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   medicationName: Mineralocorticoid receptor antagonists
   urine: -1
+  pH: -3
   sodiumLevel: -2
   potassiumLevel: -3
   calciumLevel: -5

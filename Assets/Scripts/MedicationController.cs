@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class MedicationController : MonoBehaviour
 {
     public GameObject urineSlider;
+    public GameObject pHSlider;
     public GameObject sodiumSlider;
     public GameObject potassiumSlider;
     public GameObject calciumSlider;
@@ -40,6 +41,7 @@ public class MedicationController : MonoBehaviour
         }*/ //not needed now that they're toggles! 
             
         urineSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
+        pHSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
         sodiumSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
         potassiumSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
         calciumSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
@@ -53,6 +55,7 @@ public class MedicationController : MonoBehaviour
         currentMedication = med;
 
         urineSlider.GetComponent<ScaleController>()?.SetSliderValue(med.urine);
+        pHSlider.GetComponent<ScaleController>()?.SetSliderValue(med.urine);
         sodiumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.sodiumLevel);
         potassiumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.potassiumLevel);
         calciumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.calciumLevel);
