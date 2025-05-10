@@ -11,6 +11,7 @@ public class MedicationController : MonoBehaviour
     public GameObject bicarbSlider;
 
     private Medication currentMedication;
+    public CellController currentCell;
     //public GameObject buttonDad;
 
     private void Start()
@@ -25,9 +26,15 @@ public class MedicationController : MonoBehaviour
             clearUI();
         }
 
-        else setMed(med);
+        else
+        {
+            currentMedication = med;
+            setSliders(med);
+            ApplyMedicationToCell(med);
+        }
 
     }
+
     private void clearUI()
     {
         // Find all Button components in children of buttonDad
@@ -46,18 +53,28 @@ public class MedicationController : MonoBehaviour
         calciumSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
         bicarbSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
 
+        currentCell?.ApplyMedication(null);
+
         currentMedication = null;
     }
 
-    private void setMed(Medication med)
+    private void setSliders(Medication med)
     {
-        currentMedication = med;
-
         urineSlider.GetComponent<ScaleController>()?.SetSliderValue(med.urine);
         pHSlider.GetComponent<ScaleController>()?.SetSliderValue(med.urine);
         sodiumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.sodiumLevel);
         potassiumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.potassiumLevel);
         calciumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.calciumLevel);
         bicarbSlider.GetComponent<ScaleController>()?.SetSliderValue(med.bicarbLevel);
+    }
+
+    public Medication getMedication()
+    {
+        return currentMedication; 
+    }
+
+    public void ApplyMedicationToCell(Medication med)
+    {
+        currentCell?.ApplyMedication(med);
     }
 }

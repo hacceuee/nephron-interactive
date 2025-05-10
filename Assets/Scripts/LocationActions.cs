@@ -5,57 +5,113 @@ using System.Collections;
 [RequireComponent(typeof(Toggle))]
 public class LocationActions : MonoBehaviour
 {
-    public Image targetImage;
-    private float fadeDuration = 0.1f;
+    [Header("Visual Overlay")]
+    public Image activeRegion;              // The active nephron region overlay
+    private float fadeDuration = 0.25f;
+
+    [Header("Cell Prefab Settings")]
+    public GameObject cellPrefab;           // The cell prefab to instantiate
+    private Transform cellParent;           // Where to nest the cell prefab
+
+    public MedicationController medicationController;
 
     private Toggle toggle;
     private Coroutine fadeCoroutine;
+    private GameObject currentCellInstance;
 
     void Awake()
     {
+        cellParent = GameObject.Find("CellBackground").transform;
+   
         toggle = GetComponent<Toggle>();
-        toggle.onValueChanged.AddListener(UpdateImageAlpha);
+        toggle.onValueChanged.AddListener(OnToggleChanged);
     }
 
     void Start()
     {
-        SetAlpha(toggle.isOn ? 1f : 0f); // Initialize opacity
+        SetOverlayAlpha(toggle.isOn ? 1f : 0f);
+
+        if (toggle.isOn)
+            SpawnCell();
     }
 
-    void UpdateImageAlpha(bool isOn)
+    void OnToggleChanged(bool isOn)
     {
+        FadeOverlay(isOn);
+        HandleCellSpawn(isOn);
+    }
+
+    void FadeOverlay(bool isOn)
+    {
+        if (activeRegion == null) return;
+
         float targetAlpha = isOn ? 1f : 0f;
 
         if (fadeCoroutine != null)
             StopCoroutine(fadeCoroutine);
 
-        fadeCoroutine = StartCoroutine(FadeAlpha(targetAlpha, fadeDuration));
+        fadeCoroutine = StartCoroutine(ImageFadeLERP(targetAlpha));
     }
 
-    IEnumerator FadeAlpha(float targetAlpha, float duration)
+    IEnumerator ImageFadeLERP(float targetAlpha)
     {
-        Color color = targetImage.color;
+        Color color = activeRegion.color;
         float startAlpha = color.a;
         float time = 0f;
 
-        while (time < duration)
+        while (time < fadeDuration)
         {
-            float newAlpha = Mathf.Lerp(startAlpha, targetAlpha, time / duration);
-            targetImage.color = new Color(color.r, color.g, color.b, newAlpha);
+            float alpha = Mathf.Lerp(startAlpha, targetAlpha, time / fadeDuration);
+            activeRegion.color = new Color(color.r, color.g, color.b, alpha);
             time += Time.unscaledDeltaTime;
             yield return null;
         }
 
-        targetImage.color = new Color(color.r, color.g, color.b, targetAlpha);
+        activeRegion.color = new Color(color.r, color.g, color.b, targetAlpha);
     }
 
-    void SetAlpha(float alpha)
+    void SetOverlayAlpha(float alpha)
     {
-        if (targetImage != null)
+        if (activeRegion == null) return;
+
+        Color color = activeRegion.color;
+        color.a = alpha;
+        activeRegion.color = color;
+    }
+
+    void HandleCellSpawn(bool isOn)
+    {
+        if (isOn)
         {
-            Color color = targetImage.color;
-            color.a = alpha;
-            targetImage.color = color;
+            if (currentCellInstance != null)
+                DestroyImmediate(currentCellInstance);
+
+            SpawnCell();
         }
+        else if (currentCellInstance != null)
+        {
+            DestroyImmediate(currentCellInstance);
+            currentCellInstance = null;
+        }
+    }
+
+    void SpawnCell()
+    {
+        if (cellPrefab != null && cellParent != null)
+        {
+            currentCellInstance = Instantiate(cellPrefab, cellParent);
+            medicationController.currentCell = currentCellInstance.GetComponent<CellController>();
+
+            if (medicationController.getMedication() != null)
+            {
+                medicationController.ApplyMedicationToCell(medicationController.getMedication());
+            }
+
+        }
+    }
+
+    void OnDestroy()
+    {
+        toggle.onValueChanged.RemoveListener(OnToggleChanged);
     }
 }
