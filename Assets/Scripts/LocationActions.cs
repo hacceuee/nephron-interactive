@@ -14,6 +14,7 @@ public class LocationActions : MonoBehaviour
     private Transform cellParent;           // Where to nest the cell prefab
 
     public MedicationController medicationController;
+    public CellUIManager cellUI;
 
     private Toggle toggle;
     private Coroutine fadeCoroutine;
@@ -39,6 +40,18 @@ public class LocationActions : MonoBehaviour
     {
         FadeOverlay(isOn);
         HandleCellSpawn(isOn);
+
+        if (isOn)
+        {
+            cellUI.FadeOut();
+            string cellName = gameObject.name; 
+            cellUI.UpdateCellName(cellName);
+        }
+        else
+        {
+            cellUI.FadeIn();
+            cellUI.ResetCellName();
+        }
     }
 
     void FadeOverlay(bool isOn)
