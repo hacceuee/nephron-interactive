@@ -14,14 +14,12 @@ public class ToggleFix : MonoBehaviour
         toggle = GetComponent<Toggle>();
         toggle.onValueChanged.AddListener(OnToggleChanged);
 
-        // Store original normalColor
         if (!hasStoredOriginalColor)
         {
             originalNormalColor = toggle.colors.normalColor;
             hasStoredOriginalColor = true;
         }
 
-        // Sync initial state
         UpdateColorBlock(toggle.isOn);
     }
 
@@ -36,24 +34,19 @@ public class ToggleFix : MonoBehaviour
 
     void UpdateColorBlock(bool isOn)
     {
-        var cb = toggle.colors;
+        var toggleColors = toggle.colors;
 
         if (isOn)
         {
             // Set normalColor to match selectedColor
-            cb.normalColor = cb.selectedColor;
+            toggleColors.normalColor = toggleColors.selectedColor;
         }
         else
         {
             // Restore original normalColor
-            cb.normalColor = originalNormalColor;
+            toggleColors.normalColor = originalNormalColor;
         }
 
-        toggle.colors = cb;
-    }
-
-    void OnDestroy()
-    {
-        toggle.onValueChanged.RemoveListener(OnToggleChanged);
+        toggle.colors = toggleColors;
     }
 }

@@ -46,7 +46,6 @@ public class LocationActions : MonoBehaviour
             yield return null;
         }
 
-        // Final value
         targetImage.color = new Color(color.r, color.g, color.b, targetAlpha);
     }
 
@@ -54,14 +53,9 @@ public class LocationActions : MonoBehaviour
     {
         if (targetImage != null)
         {
-            Color c = targetImage.color;
-            c.a = alpha;
-            targetImage.color = c;
+            Color color = targetImage.color;
+            color.a = alpha;
+            targetImage.color = color;
         }
-    }
-
-    void OnDestroy()
-    {
-        toggle.onValueChanged.RemoveListener(UpdateImageAlpha);
     }
 }

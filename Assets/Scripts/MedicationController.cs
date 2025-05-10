@@ -27,7 +27,6 @@ public class MedicationController : MonoBehaviour
 
         else setMed(med);
 
-        // TODO: Add the cell interaction
     }
     private void clearUI()
     {

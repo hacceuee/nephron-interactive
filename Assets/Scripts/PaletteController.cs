@@ -68,7 +68,6 @@ public class PaletteController : MonoBehaviour
                 if (outline) outline.effectColor = c;
             }
 
-
             if (app.applyToShadow)
             {
                 // Find all Shadow components, but skip the Outline component
