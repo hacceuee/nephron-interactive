@@ -1,21 +1,22 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class MedicationWarning : MonoBehaviour, IPointerClickHandler
+public class MedicationWarning : MonoBehaviour
 {
     [Header("Warning UI")]
-    public GameObject warningIcon;         
-    public GameObject warningDescription;      
+    public GameObject warningIcon;          // The exclamation icon
+    public GameObject warningDescription;   // The description panel
+
+    public Button toggleButton;             // The button that will toggle the side effect panel
 
     private TextMeshProUGUI descriptionText;
-    private bool sideEffectVisible = false;
 
     private void Awake()
     {
         if (warningIcon != null)
         {
-            Transform descTransform = warningIcon.transform.Find("Warning Description");
+            Transform descTransform = warningIcon.transform.Find("Side Effect BG Panel/Warning Description");
             if (descTransform != null)
             {
                 descriptionText = descTransform.GetComponent<TextMeshProUGUI>();
@@ -24,11 +25,16 @@ public class MedicationWarning : MonoBehaviour, IPointerClickHandler
 
         warningIcon?.SetActive(false);
         warningDescription?.SetActive(false);
+
+        if (toggleButton != null)
+        {
+            toggleButton.onClick.AddListener(ToggleSideEffectPanel);
+        }
     }
 
     public void SetWarning(Medication med)
     {
-        if (med.hasWarning)
+        if (med != null && med.hasWarning)
         {
             warningIcon?.SetActive(true);
             if (descriptionText != null)
@@ -40,30 +46,16 @@ public class MedicationWarning : MonoBehaviour, IPointerClickHandler
             warningDescription?.SetActive(false);
         }
 
-        sideEffectVisible = false;
+        warningDescription.SetActive(false);
     }
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        ToggleSideEffectPanel();
-    }
-
-
-    private void ToggleSideEffectPanel()
+    public void ToggleSideEffectPanel()
     {
         if (warningDescription != null)
         {
-            sideEffectVisible = !sideEffectVisible;
-            warningDescription.SetActive(sideEffectVisible);
+            bool isActive = warningDescription.activeSelf;
+            warningDescription.SetActive(!isActive);
         }
     }
 
-    public void HideSideEffectPanel()
-    {
-        if (warningDescription != null)
-        {
-            sideEffectVisible = false;
-            warningDescription.SetActive(false);
-        }
-    }
 }
