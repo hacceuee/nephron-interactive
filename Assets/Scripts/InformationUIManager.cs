@@ -171,23 +171,17 @@ public class InformationUIManager : MonoBehaviour
                 description.text = info.GetEffectDescription(med);
 
                 GameObject divider = ui.transform.Find("Dividing Line")?.gameObject;
-
-                if (divider != null)
                 {
                     if (i == affected.Count - 1)
                     {
                         divider.SetActive(false);
-                        Debug.Log("Disabled divider on last transporter: " + info.GetTitle());
                     }
                     else
                     {
-                        divider.SetActive(true); // in case it's reused later
+                        divider.SetActive(true);
                     }
                 }
-                else
-                {
-                    Debug.LogWarning("Divider not found in prefab: " + ui.name);
-                }
+
             }
         }
     }

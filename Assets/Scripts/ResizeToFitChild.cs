@@ -6,7 +6,7 @@ public class ResizeToFitChild : MonoBehaviour
 {
     public RectTransform childContainer;
 
-    void Update()
+    void LateUpdate()
     {
         if (childContainer == null) return;
         float preferredHeight = LayoutUtility.GetPreferredHeight(childContainer);

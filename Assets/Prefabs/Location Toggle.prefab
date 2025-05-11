@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5701572799569770175}
   - component: {fileID: 803310125439019060}
   - component: {fileID: 2948853354798799891}
+  - component: {fileID: 1847895825120592804}
   m_Layer: 0
   m_Name: Location Toggle
   m_TagString: Untagged
@@ -69,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bd17d5223e62c64e9293a6e1ba3994f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 809f045962a5c0f41ad0013b0878383f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -100,7 +101,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.42352945, g: 0.87927055, b: 0.9882353, a: 1}
+    m_NormalColor: {r: 0.42352945, g: 0.87843144, b: 0.98823535, a: 1}
     m_HighlightedColor: {r: 1, g: 0.5471698, b: 0.5471698, a: 1}
     m_PressedColor: {r: 1, g: 0.54901963, b: 0.54901963, a: 1}
     m_SelectedColor: {r: 0.98823535, g: 0.42352945, b: 0.5529412, a: 1}
@@ -169,6 +170,14 @@ MonoBehaviour:
     applyToShadow: 0
     applyToToggleSelected: 1
     applyToToggleNormal: 0
+  - colorName: Shadow Color
+    applyToImage: 0
+    applyToText: 0
+    applyToTextMeshPro: 0
+    applyToOutline: 0
+    applyToShadow: 1
+    applyToToggleSelected: 0
+    applyToToggleNormal: 0
 --- !u!114 &2948853354798799891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,4 +190,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d59c2015f09236429fff5a1b2c42c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetImage: {fileID: 0}
+  activeRegion: {fileID: 0}
+  cellPrefab: {fileID: 0}
+  medicationController: {fileID: 0}
+  cellUI: {fileID: 0}
+  informationUIManager: {fileID: 0}
+--- !u!114 &1847895825120592804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299694003696270640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.6745098, g: 0.627451, b: 0.90196085, a: 0.5019608}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
