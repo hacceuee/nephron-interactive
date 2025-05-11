@@ -12,6 +12,7 @@ public class MedicationController : MonoBehaviour
 
     private Medication currentMedication;
     public CellController currentCell;
+    public InformationUIManager informationUI; 
     //public GameObject buttonDad;
 
     private void Start()
@@ -31,6 +32,8 @@ public class MedicationController : MonoBehaviour
             currentMedication = med;
             setSliders(med);
             ApplyMedicationToCell(med);
+            informationUI.RefreshUI(currentCell, currentMedication); 
+
         }
 
     }
