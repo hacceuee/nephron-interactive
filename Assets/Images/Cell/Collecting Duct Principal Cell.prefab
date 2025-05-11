@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6208a9a1f07f6fd449f661186196caf8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be484bb0f5871dc479b1579a5ce0ade9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -102,12 +102,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56fd9d7cbc6e36040bfd0e8db4da5ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  affectedSprite: {fileID: 21300000, guid: 24cce17be742ca644bc98e52049f2eec, type: 3}
+  affectedSprite: {fileID: 21300000, guid: d6b5e218a4f889b40a901fbf29423c44, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
   medicationDescriptions:
   - Im Working
-  nakedSprite: {fileID: 21300000, guid: a16c2f6b788246b47a4837935fc47f67, type: 3}
+  nakedSprite: {fileID: 21300000, guid: 298a44b45176ac24a8466202a1a5bccb, type: 3}
   transporterTitle: Fella
   orderInList: 2
 --- !u!1 &2831500552744962063
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 8613375481697727039}
   - component: {fileID: 7308568011454745481}
   m_Layer: 0
-  m_Name: eNac MR
+  m_Name: eNac MR v2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 51affcae16ad96946bd00d791bbd6230, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d06931bf56dd7a6478ab17ba97ef0878, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -212,12 +212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56fd9d7cbc6e36040bfd0e8db4da5ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  affectedSprite: {fileID: 21300000, guid: 856c323e163fe254f81c72acad191994, type: 3}
+  affectedSprite: {fileID: 21300000, guid: ecfdf5a5b80f247448d8bca640a3d2b8, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
   medicationDescriptions:
   - Suppressed MRs prevent Na+ reabsorbtion
-  nakedSprite: {fileID: 21300000, guid: 8421f59541d5ff744bae4877442880e7, type: 3}
+  nakedSprite: {fileID: 21300000, guid: d8f1fa83e46ae9c41a471bbf49ab51ae, type: 3}
   transporterTitle: Epithelial Sodium Channel
   orderInList: 3
 --- !u!1 &6122765161487750853
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 76c68f8d170857341804abbb501357b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7f4c9974e66f382459fd6e0e0a2c8aae, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56fd9d7cbc6e36040bfd0e8db4da5ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  affectedSprite: {fileID: 0}
+  affectedSprite: {fileID: 21300000, guid: a081c27b886f6b74790d4c7a9867f1e0, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
   medicationDescriptions:
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c8b4720120ebd604d9ed638b1c6ab6c1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27fb913730ca83c42bbf2a47010119e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -537,7 +537,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 873ce894fdf239642b1f4f419ab4d117, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c70786d72067f264cbf1446fb77c9060, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 72063864d373db340bf6381b072133d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42496b1c83dddca45869d004415ebd3c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dfa1605976a5da842887e41ffb302dab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4159864498c7e7c4e9269141537e9273, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cae71cc22e8fba74380a5b0d8ebeef42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d9df1e7ed31a0144bdbafe2c12f6075, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
