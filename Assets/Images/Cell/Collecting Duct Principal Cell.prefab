@@ -105,11 +105,6 @@ MonoBehaviour:
   affectedSprite: {fileID: 21300000, guid: d6b5e218a4f889b40a901fbf29423c44, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
-  medicationDescriptions:
-  - Im Working
-  nakedSprite: {fileID: 21300000, guid: 298a44b45176ac24a8466202a1a5bccb, type: 3}
-  transporterTitle: Fella
-  orderInList: 2
 --- !u!1 &2831500552744962063
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,11 +210,6 @@ MonoBehaviour:
   affectedSprite: {fileID: 21300000, guid: ecfdf5a5b80f247448d8bca640a3d2b8, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
-  medicationDescriptions:
-  - Suppressed MRs prevent Na+ reabsorbtion
-  nakedSprite: {fileID: 21300000, guid: d8f1fa83e46ae9c41a471bbf49ab51ae, type: 3}
-  transporterTitle: Epithelial Sodium Channel
-  orderInList: 3
 --- !u!1 &6122765161487750853
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,11 +314,6 @@ MonoBehaviour:
   affectedSprite: {fileID: 21300000, guid: a081c27b886f6b74790d4c7a9867f1e0, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
-  medicationDescriptions:
-  - Im Working
-  nakedSprite: {fileID: 21300000, guid: 18b7d6cec3ecd374f85afc0d0ce329ae, type: 3}
-  transporterTitle: MR
-  orderInList: 1
 --- !u!1 &7669606347312195588
 GameObject:
   m_ObjectHideFlags: 0

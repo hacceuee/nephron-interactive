@@ -114,11 +114,13 @@ public class LocationActions : MonoBehaviour
         {
             currentCellInstance = Instantiate(cellPrefab, cellParent);
             medicationController.currentCell = currentCellInstance.GetComponent<CellController>();
+            
 
             if (medicationController.getMedication() != null)
             {
                 medicationController.ApplyMedicationToCell(medicationController.getMedication());
-            }
+                
+            } 
 
         }
     }

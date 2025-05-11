@@ -459,10 +459,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   affectedSprite: {fileID: 21300000, guid: 8a217d6576d36784ab21b66f1d230d58, type: 3}
   affectedBy: []
-  medicationDescriptions: []
-  nakedSprite: {fileID: 21300000, guid: 61c9dc71df383bb4788f31fe9eb236f7, type: 3}
-  transporterTitle: 
-  orderInList: 0
 --- !u!1 &7669606347312195588
 GameObject:
   m_ObjectHideFlags: 0
