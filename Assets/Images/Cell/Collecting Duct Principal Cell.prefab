@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 7210200747182435627}
   - component: {fileID: 1323725433211327248}
   - component: {fileID: 5400082952401639260}
+  - component: {fileID: 6515117555375463748}
   m_Layer: 0
   m_Name: MR_principal
   m_TagString: Untagged
@@ -314,6 +315,24 @@ MonoBehaviour:
   affectedSprite: {fileID: 21300000, guid: a081c27b886f6b74790d4c7a9867f1e0, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
+--- !u!114 &6515117555375463748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6122765161487750853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f574e3b398acbe448b5032af2df3a198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medicationDescriptions:
+  - Mineralocorticoid receptor antagonists block MRs, preventing aldosterone from
+    activating them and thereby reducing sodium retention and potassium loss.
+  nakedSprite: {fileID: 21300000, guid: 61c9dc71df383bb4788f31fe9eb236f7, type: 3}
+  transporterTitle: Mineralocorticoid Receptors (MR)
+  orderInList: 1
 --- !u!1 &7669606347312195588
 GameObject:
   m_ObjectHideFlags: 0

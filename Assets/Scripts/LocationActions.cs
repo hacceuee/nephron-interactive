@@ -15,6 +15,7 @@ public class LocationActions : MonoBehaviour
 
     public MedicationController medicationController;
     public CellUIManager cellUI;
+    public InformationUIManager informationUIManager;
 
     private Toggle toggle;
     private Coroutine fadeCoroutine;
@@ -52,6 +53,8 @@ public class LocationActions : MonoBehaviour
             cellUI.FadeIn();
             cellUI.ResetCellName();
         }
+
+        informationUIManager.RefreshUI(isOn ? medicationController.currentCell : null, medicationController.getMedication());
     }
 
     void FadeOverlay(bool isOn)

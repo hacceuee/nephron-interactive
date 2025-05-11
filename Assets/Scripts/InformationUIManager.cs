@@ -36,7 +36,6 @@ public class InformationUIManager : MonoBehaviour
         if (currentCell == null)
         {
             state = new NoLocationSelectedState(defaultMessagePanel, defaultMessageText);
-            print("no location selected state");
         }
         else
         {
@@ -46,28 +45,23 @@ public class InformationUIManager : MonoBehaviour
             if (med == null)
             {
                 state = new NoMedicationSelectedState(defaultMessagePanel, defaultMessageText);
-                print("no medication selected state");
             }
             else
             {
                 var affected = transporters
-                    .Where(t => t.affectedBy.Contains(med))
-                    .OrderBy(t =>
-                    {
-                        var info = t.GetComponent<TransporterInformation>();
-                        return info != null ? info.orderInList : int.MaxValue;
-                    })
+                    .Select(t => new { transporter = t, info = t.GetComponent<TransporterInformation>() })
+                    .Where(pair => pair.transporter.affectedBy.Contains(med) && pair.info != null)
+                    .OrderBy(pair => pair.info.orderInList)
+                    .Select(pair => pair.transporter)
                     .ToList();
 
                 if (affected.Count == 0)
                 {
                     state = new NoTransporterAffectedState(defaultMessagePanel, defaultMessageText, med);
-                    print("no transporters founds state");
                 }
                 else
                 {
                     state = new TransportersPresentState(affected, transporterUIPrefab, transporterListParent, med);
-                    print("populating transporters list");
                 }
             }
         }
@@ -158,8 +152,9 @@ public class InformationUIManager : MonoBehaviour
 
         public void Apply()
         {
-            foreach (var t in affected)
+            for (int i = 0; i < affected.Count; i++)
             {
+                var t = affected[i];
                 var info = t.GetComponent<TransporterInformation>();
                 if (info == null) continue;
 
@@ -170,10 +165,29 @@ public class InformationUIManager : MonoBehaviour
                 TextMeshProUGUI description = ui.transform.Find("Description").GetComponent<TextMeshProUGUI>();
 
                 icon.sprite = info.GetIcon();
+                icon.SetNativeSize();
+
                 name.text = info.GetTitle();
                 description.text = info.GetEffectDescription(med);
 
-                print(info.GetTitle()); 
+                GameObject divider = ui.transform.Find("Dividing Line")?.gameObject;
+
+                if (divider != null)
+                {
+                    if (i == affected.Count - 1)
+                    {
+                        divider.SetActive(false);
+                        Debug.Log("Disabled divider on last transporter: " + info.GetTitle());
+                    }
+                    else
+                    {
+                        divider.SetActive(true); // in case it's reused later
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Divider not found in prefab: " + ui.name);
+                }
             }
         }
     }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6289526689337551469}
   - component: {fileID: 1373304980127573699}
   m_Layer: 0
-  m_Name: 'Dividing Line '
+  m_Name: Dividing Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,7 +133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -35.800003}
+  m_AnchoredPosition: {x: 0, y: -74.905}
   m_SizeDelta: {x: 370, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &8039420296764570303
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mineralocorticoid (Hormone)
+  m_text: Mineralocorticoid Hormone)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f54ec89df3d16541b3e8397abbc71d6, type: 2}
   m_sharedMaterial: {fileID: 4066946961767510294, guid: 4f54ec89df3d16541b3e8397abbc71d6, type: 2}
