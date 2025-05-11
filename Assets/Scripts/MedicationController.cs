@@ -13,6 +13,7 @@ public class MedicationController : MonoBehaviour
     private Medication currentMedication;
     public CellController currentCell;
     public InformationUIManager informationUIManager;
+    public MedicationWarning medicationWarning;
     //public GameObject buttonDad;
 
     private void Start()
@@ -32,6 +33,7 @@ public class MedicationController : MonoBehaviour
             currentMedication = med;
             setSliders(med);
             ApplyMedicationToCell(med);
+            medicationWarning?.SetWarning(med);
 
         }
 
@@ -56,6 +58,7 @@ public class MedicationController : MonoBehaviour
         bicarbSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
 
         currentCell?.ApplyMedication(null);
+        medicationWarning?.SetWarning(null);
 
         currentMedication = null;
     }

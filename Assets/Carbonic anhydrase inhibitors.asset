@@ -19,5 +19,9 @@ MonoBehaviour:
   potassiumLevel: 3
   calciumLevel: 4
   bicarbLevel: 5
-  hasWarning: 0
-  warningText: 
+  hasWarning: 1
+  warningText: 'This is some
+
+    Warning test text
+
+    <b> You know </b>'
