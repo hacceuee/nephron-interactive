@@ -710,6 +710,7 @@ MonoBehaviour:
   affectedSprite: {fileID: 21300000, guid: 4d724e4f9d2d642fcbefb1e872125208, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
+  - {fileID: 11400000, guid: 78f6e5c724d6c02439729851f2bb22a4, type: 2}
 --- !u!114 &1394444814549779812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,6 +726,10 @@ MonoBehaviour:
   medicationDescriptions:
   - Less ENaC means less Na<sup>+</sup> reabsorption, more Na<sup>+</sup>/water in
     urine, and less K<sup>+</sup> secretion.
+  - Potassium-sparing diuretics block ENaCs, preventing Na<sup>+</sup> reabsorption.
+    Without Na<sup>+</sup> entering the cells, an electronegative lumen is not created,
+    which reduces K<sup>+</sup> secretion into the urine. As more Na<sup>+</sup>
+    and water remain in the tubule, urine volume increases.
   nakedSprite: {fileID: 21300000, guid: d8f1fa83e46ae9c41a471bbf49ab51ae, type: 3}
   transporterTitle: ENaC
   orderInList: 2
@@ -2720,7 +2725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4041738443461008204, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4744548800597693944, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_text
@@ -2746,7 +2751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 78.22
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2782,11 +2787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 649.64
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 108.22
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_LocalPosition.x
