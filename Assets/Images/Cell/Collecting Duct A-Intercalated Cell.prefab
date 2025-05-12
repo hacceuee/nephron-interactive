@@ -118,6 +118,8 @@ GameObject:
   - component: {fileID: 985947313874649766}
   - component: {fileID: 4232944438044917276}
   - component: {fileID: 8753801105817797229}
+  - component: {fileID: 7111196522052786709}
+  - component: {fileID: 4804156161819278680}
   m_Layer: 0
   m_Name: H ATPase MR
   m_TagString: Untagged
@@ -210,6 +212,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubblePanel: {fileID: 8627031487772293752}
+--- !u!114 &7111196522052786709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796381508652569338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56fd9d7cbc6e36040bfd0e8db4da5ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affectedSprite: {fileID: 21300000, guid: cd7c432b5d5a9d14c8eb91b4d574e66b, type: 3}
+  affectedBy:
+  - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
+--- !u!114 &4804156161819278680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796381508652569338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f574e3b398acbe448b5032af2df3a198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medicationDescriptions:
+  - MRAs reduce H<sup>+</sup>-ATPase activity by blocking the aldosterone receptor.
+    Reduced aldosterone levels lead to decreased activity of H<sup>+</sup>-ATPase,
+    as this proton pump is normally up-regulated by aldosterone.
+  nakedSprite: {fileID: 21300000, guid: ba2c7429a9049074e92485085c03c3c1, type: 3}
+  transporterTitle: H<sup>+</sup>-ATPase
+  orderInList: 2
 --- !u!1 &4242013492749041570
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,6 +422,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f97b2d761c0734fb46dd5d33cba05a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6011071814484999030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2385893470776758551}
+  - component: {fileID: 9222558961697502464}
+  - component: {fileID: 9048193868897096967}
+  - component: {fileID: 7699458508454531275}
+  - component: {fileID: 6346179221971010557}
+  m_Layer: 0
+  m_Name: pill-angled@3x
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2385893470776758551
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6011071814484999030}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4118924205367064707}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 127, y: 115}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9222558961697502464
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6011071814484999030}
+  m_CullTransparentMesh: 1
+--- !u!114 &9048193868897096967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6011071814484999030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5c64ec89fe0ab49ed87641774a40f83f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7699458508454531275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6011071814484999030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56fd9d7cbc6e36040bfd0e8db4da5ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affectedSprite: {fileID: 21300000, guid: dc100f4b01a62f24d83094030ab6978a, type: 3}
+  affectedBy:
+  - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
+--- !u!114 &6346179221971010557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6011071814484999030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f574e3b398acbe448b5032af2df3a198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medicationDescriptions:
+  - "Subset of potassium-sparing diuretic. Also known as \u201Caldosterone antagonists\u201D."
+  nakedSprite: {fileID: 21300000, guid: dc100f4b01a62f24d83094030ab6978a, type: 3}
+  transporterTitle: Mineralocorticoid receptor antagonists (MRAs) overview
+  orderInList: 0
 --- !u!1 &6913071496441427542
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,9 +544,9 @@ GameObject:
   - component: {fileID: 5420704103170384173}
   - component: {fileID: 1754989684273553295}
   - component: {fileID: 670694112783986969}
-  - component: {fileID: 3954037128127737080}
+  - component: {fileID: 3673850898656932941}
   m_Layer: 0
-  m_Name: MR active 2
+  m_Name: MR active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -419,13 +564,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 2385893470776758551}
+  - {fileID: 4557478124092736524}
   - {fileID: 5836227954041892458}
   m_Father: {fileID: 3473585212524184684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -50.00006, y: 4.0000076}
-  m_SizeDelta: {x: 672, y: 142}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -50.00006, y: 15}
+  m_SizeDelta: {x: 416, y: 282}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &4271878418204550576
 CanvasRenderer:
@@ -455,7 +602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 06ba051c702a1da49a900f6120c66b49, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93e7465d58ab34d8ea92c0c143f13ada, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -489,9 +636,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56fd9d7cbc6e36040bfd0e8db4da5ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  affectedSprite: {fileID: 21300000, guid: 8a217d6576d36784ab21b66f1d230d58, type: 3}
-  affectedBy: []
---- !u!114 &3954037128127737080
+  affectedSprite: {fileID: 21300000, guid: a2103610e6e8a4ac0a9c5a779e1a1528, type: 3}
+  affectedBy:
+  - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
+--- !u!114 &3673850898656932941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -500,10 +648,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6913071496441427542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fe4057495a970c419b4c2c274cb8588, type: 3}
+  m_Script: {fileID: 11500000, guid: f574e3b398acbe448b5032af2df3a198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speechBubblePanel: {fileID: 3768148261684024862}
+  medicationDescriptions:
+  - The medication mimics aldosterone.
+  nakedSprite: {fileID: 21300000, guid: d11f8e8107a53401aa3194c650500be8, type: 3}
+  transporterTitle: Mineralocorticoid receptor (MR)
+  orderInList: 1
 --- !u!1 &7669606347312195588
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +774,7 @@ GameObject:
   - component: {fileID: 630141512767834140}
   - component: {fileID: 8261255137143985208}
   m_Layer: 0
-  m_Name: Collecting Duct A-Intercalcated Cell
+  m_Name: Collecting Duct A-Intercalated Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -858,6 +1010,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f97b2d761c0734fb46dd5d33cba05a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8479311562580938029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4557478124092736524}
+  - component: {fileID: 257687771288755795}
+  - component: {fileID: 7064571597685475097}
+  - component: {fileID: 379846028632907548}
+  m_Layer: 0
+  m_Name: speechbubblehitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4557478124092736524
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8479311562580938029}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4118924205367064707}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 18, y: 0}
+  m_SizeDelta: {x: 200, y: 300}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!222 &257687771288755795
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8479311562580938029}
+  m_CullTransparentMesh: 1
+--- !u!114 &7064571597685475097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8479311562580938029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5c64ec89fe0ab49ed87641774a40f83f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &379846028632907548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8479311562580938029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe4057495a970c419b4c2c274cb8588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speechBubblePanel: {fileID: 3768148261684024862}
 --- !u!1 &9068072404637964645
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +1207,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Mineralocorticoid Hormone
       objectReference: {fileID: 0}
+    - target: {fileID: 4744548800597693944, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1052,11 +1297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -453
+      value: -360
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 108
+      value: 137
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
