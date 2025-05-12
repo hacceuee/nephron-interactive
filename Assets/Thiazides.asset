@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Thiazides
   m_EditorClassIdentifier: 
   medicationName: Thiazides
-  urine: -1
-  sodiumLevel: 1
-  potassiumLevel: -2
-  calciumLevel: 3
-  bicarbLevel: -1
-  hasWarning: 0
+  urine: 0
+  pH: 0
+  sodiumLevel: 0
+  potassiumLevel: 0
+  calciumLevel: 0
+  bicarbLevel: 0
+  hasWarning: 1
   warningText: 

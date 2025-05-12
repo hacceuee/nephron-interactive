@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Carbonic anhydrase inhibitors
   m_EditorClassIdentifier: 
   medicationName: Carbonic anhydrase inhibitors
-  urine: 1
+  urine: 3
   pH: 2.2
   sodiumLevel: 2
   potassiumLevel: 3

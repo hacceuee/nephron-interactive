@@ -160,8 +160,8 @@ public class InformationUIManager : MonoBehaviour
 
                 GameObject ui = GameObject.Instantiate(prefab, parent);
 
-                Image icon = ui.transform.Find("Receptor Image").GetComponent<Image>();
-                TextMeshProUGUI name = ui.transform.Find("Receptor Image/Name").GetComponent<TextMeshProUGUI>();
+                Image icon = ui.transform.Find("Header/Receptor Image").GetComponent<Image>();
+                TextMeshProUGUI name = ui.transform.Find("Header/Name").GetComponent<TextMeshProUGUI>();
                 TextMeshProUGUI description = ui.transform.Find("Description").GetComponent<TextMeshProUGUI>();
 
                 icon.sprite = info.GetIcon();

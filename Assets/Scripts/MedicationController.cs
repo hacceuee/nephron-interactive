@@ -59,6 +59,7 @@ public class MedicationController : MonoBehaviour
 
         currentCell?.ApplyMedication(null);
         medicationWarning?.SetWarning(null);
+        informationUIManager?.RefreshUI(currentCell, null);
 
         currentMedication = null;
     }

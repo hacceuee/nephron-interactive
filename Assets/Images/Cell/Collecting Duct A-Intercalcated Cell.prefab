@@ -245,8 +245,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: -80}
-  m_SizeDelta: {x: 142, y: 131}
+  m_AnchoredPosition: {x: 150, y: -57}
+  m_SizeDelta: {x: 129, y: 116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &266971409691268014
 CanvasRenderer:
@@ -717,8 +717,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -175, y: 80}
-  m_SizeDelta: {x: 142, y: 131}
+  m_AnchoredPosition: {x: -162, y: 70}
+  m_SizeDelta: {x: 132, y: 116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7504364664568288789
 CanvasRenderer:
@@ -806,7 +806,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 175, y: 0}
-  m_SizeDelta: {x: 132, y: 117}
+  m_SizeDelta: {x: 128, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6129785519914127095
 CanvasRenderer:
@@ -893,8 +893,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: -80}
-  m_SizeDelta: {x: 142, y: 131}
+  m_AnchoredPosition: {x: 140, y: -52}
+  m_SizeDelta: {x: 128, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &42154440802442939
 CanvasRenderer:
@@ -958,6 +958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Speech Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 4041738443461008204, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4744548800597693944, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_text
       value: Mineralocorticoid Hormone
@@ -976,7 +980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 78.22
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1012,11 +1016,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 861.31
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 108.22
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1097,6 +1101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Speech Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 4041738443461008204, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4744548800597693944, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_text
       value: Cl<sup>-</sup>/HCO<sub>3</sub><sup>-</sup> exchanger (AE1)
@@ -1115,7 +1123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 78.22
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1151,11 +1159,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 825.98
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 108.22
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1238,7 +1246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4041738443461008204, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4744548800597693944, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_text
@@ -1258,7 +1266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 78.22
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1294,11 +1302,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 361.48
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 108.22
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1383,6 +1391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Speech Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 4041738443461008204, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1397,7 +1409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 78.22
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1433,11 +1445,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 453.48
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 108.22
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_LocalPosition.x
