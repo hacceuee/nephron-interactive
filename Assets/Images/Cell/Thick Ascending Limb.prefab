@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1539092121277958877}
   - component: {fileID: 4002519532713643020}
   - component: {fileID: 4847434434666715064}
+  - component: {fileID: 4834180629342993915}
   m_Layer: 0
   m_Name: Thick Ascending Limb
   m_TagString: Untagged
@@ -30,10 +31,10 @@ RectTransform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 2464798504172281875}
   - {fileID: 511229402351748501}
   - {fileID: 3364397419961154534}
   - {fileID: 2233587128284707657}
+  - {fileID: 2464798504172281875}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -59,6 +60,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3834c445af8c72949a73911ccdf80892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4834180629342993915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356279271387673782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf766b1707f92d43bacb9c1b330e431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &915206361883326428
@@ -167,6 +180,7 @@ GameObject:
   - component: {fileID: 7045242911372241100}
   - component: {fileID: 4615276287016894250}
   - component: {fileID: 3855991111175338370}
+  - component: {fileID: 590185194262796528}
   m_Layer: 0
   m_Name: NaClK active
   m_TagString: Untagged
@@ -280,6 +294,19 @@ MonoBehaviour:
   nakedSprite: {fileID: 21300000, guid: ba2c7429a9049074e92485085c03c3c1, type: 3}
   transporterTitle: NKCC2
   orderInList: 0
+--- !u!114 &590185194262796528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836934280633676539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe4057495a970c419b4c2c274cb8588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speechBubblePanel: {fileID: 8134497173617838987}
 --- !u!1 &3139405322827864402
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 788.43
+      value: 1061.54
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
@@ -891,7 +918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 803.43
+      value: 1076.54
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -923,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 818.43
+      value: 1091.54
       objectReference: {fileID: 0}
     - target: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_SizeDelta.y
@@ -989,6 +1016,11 @@ PrefabInstance:
 --- !u!224 &1465603449844970495 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6675028669112066872, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
+  m_PrefabInstance: {fileID: 5257013204040650951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8134497173617838987 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4041738443461008204, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
   m_PrefabInstance: {fileID: 5257013204040650951}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5381969477023333229

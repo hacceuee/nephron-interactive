@@ -402,8 +402,11 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Pendrin
 
-        (Apical Cl<sup>-</sup>/HCO<sub>3</sub><sup>-</sup>
-        exchanger)'
+        (Cl<sup>-</sup>/HCO<sub>3</sub><sup>-</sup> exchanger)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744548800597693944, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5638411517330717819, guid: 47b189a30fd069048bb496517e0dd8f5, type: 3}
       propertyPath: m_AnchorMax.y
