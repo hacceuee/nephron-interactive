@@ -67,6 +67,7 @@ public class InformationUIManager : MonoBehaviour
         }
 
         state.Apply();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(transporterListParent.GetComponent<RectTransform>());
     }
 
     // --- Interface for states ---
@@ -159,6 +160,7 @@ public class InformationUIManager : MonoBehaviour
                 if (info == null) continue;
 
                 GameObject ui = GameObject.Instantiate(prefab, parent);
+                ui.SetActive(false);
 
                 Image icon = ui.transform.Find("Header/Receptor Image").GetComponent<Image>();
                 TextMeshProUGUI name = ui.transform.Find("Header/Name").GetComponent<TextMeshProUGUI>();
@@ -181,8 +183,10 @@ public class InformationUIManager : MonoBehaviour
                         divider.SetActive(true);
                     }
                 }
+                ui.SetActive(true);
 
             }
+            LayoutRebuilder.ForceRebuildLayoutImmediate(parent.GetComponent<RectTransform>());
         }
     }
 }

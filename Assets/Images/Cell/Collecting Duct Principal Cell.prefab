@@ -1508,7 +1508,6 @@ GameObject:
   - component: {fileID: 1214610669484700301}
   - component: {fileID: 1133008164889937020}
   - component: {fileID: 161224030078160438}
-  - component: {fileID: 8605049269963763213}
   m_Layer: 0
   m_Name: pill-angled psd@3x (1)
   m_TagString: Untagged
@@ -1573,22 +1572,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8605049269963763213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7936131330802412030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56fd9d7cbc6e36040bfd0e8db4da5ae5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  affectedSprites:
-  - {fileID: 21300000, guid: dc100f4b01a62f24d83094030ab6978a, type: 3}
-  affectedBy:
-  - {fileID: 11400000, guid: 78f6e5c724d6c02439729851f2bb22a4, type: 2}
 --- !u!1 &8057645317951104560
 GameObject:
   m_ObjectHideFlags: 0
