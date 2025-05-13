@@ -5,7 +5,7 @@ using System.Collections.Generic;
 [ExecuteAlways]
 public class Transporter : MonoBehaviour
 {
-    public Sprite affectedSprite;
+    public List<Sprite> affectedSprites;
     private Sprite normalSprite;
 
     public List<Medication> affectedBy; // Medications that affect this transporter
@@ -26,8 +26,18 @@ public class Transporter : MonoBehaviour
     {
         if (image == null) return;
 
-        bool isAffected = affectedBy.Contains(currentMedication);
-        image.sprite = isAffected ? affectedSprite : normalSprite;
+        int index = affectedBy.IndexOf(currentMedication);
+        if (index >= 0)
+        {
+            if (affectedSprites != null && affectedSprites.Count > 0)
+            {
+                image.sprite = index < affectedSprites.Count ? affectedSprites[index] : affectedSprites[0];
+            }
+        }
+        else
+        {
+            image.sprite = normalSprite;
+        }
     }
 
     public Sprite GetNormalSprite()
