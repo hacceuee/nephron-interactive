@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: SGLT2is
   m_EditorClassIdentifier: 
   medicationName: SGLT2is
-  urine: 1
-  sodiumLevel: 5
-  potassiumLevel: 1
+  urine: 3
+  pH: 0
+  sodiumLevel: 1
+  potassiumLevel: 0
   calciumLevel: 3
-  bicarbLevel: -1
+  bicarbLevel: 0
+  glucoseLevel: 5
   hasWarning: 0
   warningText: 

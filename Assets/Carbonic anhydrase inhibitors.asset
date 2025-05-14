@@ -14,14 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   medicationName: Carbonic anhydrase inhibitors
   urine: 3
-  pH: 2.2
-  sodiumLevel: 2
-  potassiumLevel: 3
-  calciumLevel: 4
+  pH: 0
+  sodiumLevel: 1
+  potassiumLevel: 5
+  calciumLevel: 2
   bicarbLevel: 5
-  hasWarning: 1
-  warningText: 'This is some
-
-    Warning test text
-
-    <b> You know </b>'
+  glucoseLevel: 0
+  hasWarning: 0
+  warningText: 

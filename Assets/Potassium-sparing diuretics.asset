@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Potassium-sparing diuretics
   m_EditorClassIdentifier: 
   medicationName: Potassium-sparing diuretics
-  urine: 4
+  urine: 3
   pH: 0
   sodiumLevel: 1
-  potassiumLevel: -3
+  potassiumLevel: -2
   calciumLevel: 1
   bicarbLevel: 0
+  glucoseLevel: 0
   hasWarning: 0
   warningText: 

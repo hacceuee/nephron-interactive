@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Thiazides
   m_EditorClassIdentifier: 
   medicationName: Thiazides
-  urine: 0
+  urine: 3
   pH: 0
-  sodiumLevel: 0
-  potassiumLevel: 0
-  calciumLevel: 0
+  sodiumLevel: 3
+  potassiumLevel: 3
+  calciumLevel: -2
   bicarbLevel: 0
+  glucoseLevel: 0
   hasWarning: 1
-  warningText: 
+  warningText: 'Most likely to cause hypoatremia and hypokalemia. '

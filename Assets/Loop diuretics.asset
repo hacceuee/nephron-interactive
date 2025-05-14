@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Loop diuretics
   m_EditorClassIdentifier: 
   medicationName: Loop diuretics
-  urine: 1
-  pH: -1.1
-  sodiumLevel: 1
-  potassiumLevel: 1
-  calciumLevel: 1
-  bicarbLevel: -1
-  hasWarning: 0
-  warningText: 
+  urine: 5
+  pH: 0
+  sodiumLevel: 5
+  potassiumLevel: 3
+  calciumLevel: 5
+  bicarbLevel: 0
+  glucoseLevel: 0
+  hasWarning: 1
+  warningText: 'Highest amount of sodium and water loss. '

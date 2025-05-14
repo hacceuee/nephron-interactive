@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Mineralocorticoid receptor antagonists
   m_EditorClassIdentifier: 
   medicationName: Mineralocorticoid receptor antagonists
-  urine: -1
-  pH: -3
-  sodiumLevel: -2
-  potassiumLevel: -3
-  calciumLevel: -5
-  bicarbLevel: -4
+  urine: 3
+  pH: 0
+  sodiumLevel: 1
+  potassiumLevel: -2
+  calciumLevel: 1
+  bicarbLevel: 0
+  glucoseLevel: 0
   hasWarning: 0
   warningText: 

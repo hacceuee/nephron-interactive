@@ -15,6 +15,7 @@ public class Medication : ScriptableObject
     public float potassiumLevel;
     public float calciumLevel;
     public float bicarbLevel;
+    public float glucoseLevel;
 
     [Header("Warnings")]
     public bool hasWarning;

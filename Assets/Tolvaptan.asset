@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Tolvaptan
   m_EditorClassIdentifier: 
   medicationName: Tolvaptan
-  urine: 2
-  sodiumLevel: -3
-  potassiumLevel: 5
-  calciumLevel: -2
-  bicarbLevel: 1
+  urine: 5
+  pH: 0
+  sodiumLevel: 0
+  potassiumLevel: 0
+  calciumLevel: 0
+  bicarbLevel: 0
+  glucoseLevel: 0
   hasWarning: 0
   warningText: 

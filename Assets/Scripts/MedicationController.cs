@@ -9,6 +9,7 @@ public class MedicationController : MonoBehaviour
     public GameObject potassiumSlider;
     public GameObject calciumSlider;
     public GameObject bicarbSlider;
+    public GameObject glucoseSlider;
 
     private Medication currentMedication;
     public CellController currentCell;
@@ -56,6 +57,7 @@ public class MedicationController : MonoBehaviour
         potassiumSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
         calciumSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
         bicarbSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
+        glucoseSlider.GetComponent<ScaleController>()?.SetSliderValue(0f);
 
         currentCell?.ApplyMedication(null);
         medicationWarning?.SetWarning(null);
@@ -67,11 +69,12 @@ public class MedicationController : MonoBehaviour
     private void setSliders(Medication med)
     {
         urineSlider.GetComponent<ScaleController>()?.SetSliderValue(med.urine);
-        pHSlider.GetComponent<ScaleController>()?.SetSliderValue(med.urine);
+        pHSlider.GetComponent<ScaleController>()?.SetSliderValue(med.pH);
         sodiumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.sodiumLevel);
         potassiumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.potassiumLevel);
         calciumSlider.GetComponent<ScaleController>()?.SetSliderValue(med.calciumLevel);
         bicarbSlider.GetComponent<ScaleController>()?.SetSliderValue(med.bicarbLevel);
+        glucoseSlider.GetComponent<ScaleController>()?.SetSliderValue(med.glucoseLevel);
     }
 
     public Medication getMedication()
