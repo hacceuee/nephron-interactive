@@ -20,5 +20,6 @@ MonoBehaviour:
   calciumLevel: 1
   bicarbLevel: 0
   glucoseLevel: 0
-  hasWarning: 0
-  warningText: 
+  hasWarning: 1
+  warningText: "MR Antagonists (MRAs) are a subset of potassium-sparing diuretic.
+    Also known as \u201Caldosterone antagonists\u201D."

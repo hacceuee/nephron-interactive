@@ -13,8 +13,10 @@ GameObject:
   - component: {fileID: 985947313874649766}
   - component: {fileID: 4232944438044917276}
   - component: {fileID: 1439845672963794672}
+  - component: {fileID: 1485425270033001589}
+  - component: {fileID: 7245920058220050408}
   m_Layer: 0
-  m_Name: K Channel full
+  m_Name: K channel MR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,13 +34,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 1864908611304041330}
   - {fileID: 9091717856307004247}
   m_Father: {fileID: 8203332299228236288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 366, y: 116}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -65, y: -182}
+  m_SizeDelta: {x: 258, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3523818038815466482
 CanvasRenderer:
@@ -68,7 +71,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8c02bca806c9bf8498a3ed52179c8d35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be484bb0f5871dc479b1579a5ce0ade9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -103,6 +106,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubblePanel: {fileID: 1916582625459370787}
+--- !u!114 &1485425270033001589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796381508652569338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56fd9d7cbc6e36040bfd0e8db4da5ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affectedSprites:
+  - {fileID: 21300000, guid: ce7eb448a171b37449e313b68be7f1c6, type: 3}
+  affectedBy:
+  - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
+--- !u!114 &7245920058220050408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796381508652569338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f574e3b398acbe448b5032af2df3a198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medicationDescriptions:
+  - Less ROMK increases K<sup>+</sup> retention.
+  nakedSprite: {fileID: 21300000, guid: 298a44b45176ac24a8466202a1a5bccb, type: 3}
+  transporterTitle: ROMK
+  orderInList: 3
 --- !u!1 &2662764115705889938
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 30}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 256, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2854730339513667858
@@ -318,8 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   medicationDescriptions:
-  - Less ENaC means less Na<sup>+</sup> reabsorption, more Na<sup>+</sup>/water in
-    urine, and less K<sup>+</sup> secretion.
+  - Less ENaC means less Na<sup>+</sup> reabsorption.
   - Potassium-sparing diuretics block ENaCs, preventing Na<sup>+</sup> reabsorption.<br><br>Without
     Na<sup>+</sup> entering the cells, an electronegative lumen is not created, which
     reduces K<sup>+</sup> secretion into the urine. As more Na<sup>+</sup> and water
@@ -605,7 +640,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 146.9401, y: -215.71501}
-  m_SizeDelta: {x: 671, y: 282}
+  m_SizeDelta: {x: 672, y: 298}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4819112599291207815
 CanvasRenderer:
@@ -670,7 +705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   affectedSprites:
-  - {fileID: 21300000, guid: a081c27b886f6b74790d4c7a9867f1e0, type: 3}
+  - {fileID: 21300000, guid: 0c3d568047479fd4e813a6187b35ea6e, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
 --- !u!114 &6515117555375463748
@@ -687,7 +722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   medicationDescriptions:
   - MRAs bind to the MR, blocking aldosterone. This reduces the transcription of
-    ENaC and the Na<sup>+</sup>/K<sup>+</sup> ATPase pump.
+    ENaC, ROMK, and the Na<sup>+</sup>/K<sup>+</sup> ATPase pump.
   nakedSprite: {fileID: 21300000, guid: d11f8e8107a53401aa3194c650500be8, type: 3}
   transporterTitle: Mineralocorticoid receptor (MR)
   orderInList: 1
@@ -821,7 +856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 30}
+  m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 344, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7426359934033702958
@@ -907,7 +942,7 @@ MonoBehaviour:
     retention.
   nakedSprite: {fileID: 21300000, guid: aaa0f4c88f604d74692a32babc869085, type: 3}
   transporterTitle: Na<sup>+</sup>/K<sup>+</sup>-ATPase pump
-  orderInList: 3
+  orderInList: 4
 --- !u!114 &7638165980862445870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,6 +1189,94 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8707111409512001459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f97b2d761c0734fb46dd5d33cba05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8937510694331120540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1864908611304041330}
+  - component: {fileID: 7835118848348481924}
+  - component: {fileID: 202664594844527347}
+  - component: {fileID: 2571877134109893147}
+  m_Layer: 0
+  m_Name: K
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1864908611304041330
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8937510694331120540}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 3473585212524184684}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 60, y: 0}
+  m_SizeDelta: {x: 132, y: 116}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7835118848348481924
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8937510694331120540}
+  m_CullTransparentMesh: 1
+--- !u!114 &202664594844527347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8937510694331120540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 42496b1c83dddca45869d004415ebd3c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2571877134109893147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8937510694331120540}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2f97b2d761c0734fb46dd5d33cba05a, type: 3}

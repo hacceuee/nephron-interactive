@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 712755433941216527}
   - component: {fileID: 1735788495748411564}
   m_Layer: 0
-  m_Name: SGLT active
+  m_Name: SGLT2 transport active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a3573bcc52f3943e6b822a7dd27c83ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd6773b908828914494a17f6b4a6d120, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -453,7 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   affectedSprites:
-  - {fileID: 21300000, guid: fc82df206f1484e9aa2056eacc510954, type: 3}
+  - {fileID: 21300000, guid: c26aad68b3445b2499adbb30e8c9b07d, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 38b76d4d4dd8a66408285551a4a74c33, type: 2}
 --- !u!114 &1735788495748411564
@@ -471,7 +471,7 @@ MonoBehaviour:
   medicationDescriptions:
   - 'Inhibited transport proteins reduce reabsorption of glucose and sodium, which
     increases urine volume.  '
-  nakedSprite: {fileID: 21300000, guid: aaa0f4c88f604d74692a32babc869085, type: 3}
+  nakedSprite: {fileID: 21300000, guid: ba2c7429a9049074e92485085c03c3c1, type: 3}
   transporterTitle: Sodium-dependent glucose cotransporter 2
   orderInList: 0
 --- !u!1 &1600870246694583518

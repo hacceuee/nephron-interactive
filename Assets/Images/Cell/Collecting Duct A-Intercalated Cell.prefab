@@ -617,7 +617,6 @@ GameObject:
   - component: {fileID: 9222558961697502464}
   - component: {fileID: 9048193868897096967}
   - component: {fileID: 7699458508454531275}
-  - component: {fileID: 6346179221971010557}
   m_Layer: 0
   m_Name: pill-angled@3x
   m_TagString: Untagged
@@ -698,23 +697,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dc100f4b01a62f24d83094030ab6978a, type: 3}
   affectedBy:
   - {fileID: 11400000, guid: 489ffbd1faa8c4a448b58c10f2472827, type: 2}
---- !u!114 &6346179221971010557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6011071814484999030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f574e3b398acbe448b5032af2df3a198, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  medicationDescriptions:
-  - "Subset of potassium-sparing diuretic. Also known as \u201Caldosterone antagonists\u201D."
-  nakedSprite: {fileID: 21300000, guid: dc100f4b01a62f24d83094030ab6978a, type: 3}
-  transporterTitle: Mineralocorticoid receptor antagonists (MRAs) overview
-  orderInList: 0
 --- !u!1 &6913071496441427542
 GameObject:
   m_ObjectHideFlags: 0

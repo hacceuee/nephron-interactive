@@ -20,5 +20,5 @@ MonoBehaviour:
   calciumLevel: 1
   bicarbLevel: 0
   glucoseLevel: 0
-  hasWarning: 0
-  warningText: 
+  hasWarning: 1
+  warningText: 'Subset of potassium-sparing diuretic. '
