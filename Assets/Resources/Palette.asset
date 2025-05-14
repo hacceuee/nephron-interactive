@@ -30,7 +30,7 @@ MonoBehaviour:
   - name: Nephron Default Color
     color: {r: 0.9960785, g: 0.8509804, b: 0.6392157, a: 1}
   - name: Nephron Selected Color
-    color: {r: 1, g: 0.79607844, b: 0.7882353, a: 0}
+    color: {r: 0.83137256, g: 0.79607844, b: 1, a: 0}
   - name: Side Effect
     color: {r: 1, g: 0.18738458, b: 0.1566037, a: 1}
   - name: Side Effect BG

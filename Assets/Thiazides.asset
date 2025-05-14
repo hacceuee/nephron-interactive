@@ -16,9 +16,9 @@ MonoBehaviour:
   urine: 3
   pH: 0
   sodiumLevel: 3
-  potassiumLevel: 3
+  potassiumLevel: 4
   calciumLevel: -2
   bicarbLevel: 0
   glucoseLevel: 0
   hasWarning: 1
-  warningText: 'Most likely to cause hypoatremia and hypokalemia. '
+  warningText: 'Most likely to cause hyponatremia and hypokalemia. '
