@@ -13,7 +13,7 @@ Copyright 2025
 
 Github is available for bug issues and user feedback, as well as reference for future JHU AAM students.
 
-​Designed and developed by:
+​Designed and developed by: <br>
 Carolyn Chen (https://carochenmedart.com)​​ <br>
 Hannah Forward (https://forwardmedart.com/) <br>
 Alexandria Dannhardt (https://dannhardt.com/​)​​ <br>
