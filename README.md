@@ -1,6 +1,8 @@
 # Overview 
 Nephron Study Guide Interactive for Diuretics, based off the JHU SOM M2 Nephron Study Maps developed by Dr. Manny Monroy-Trujillo and Dr. Elena Cervantes.
 
+**You can find the interactive here: https://hacceuee.itch.io/nephron-interactive**
+
 ## License
 This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.  
 [Learn more](https://creativecommons.org/licenses/by-nc-nd/4.0/)
